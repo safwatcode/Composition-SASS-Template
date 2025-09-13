@@ -1,0 +1,136 @@
+/* Slider */
+.slider {
+  blockquote {
+    line-height: 1.7;
+    text-align: center;
+    font: {
+      family: Tahoma, Arial;
+      style: italic;
+      weight: bold;
+      size: 20px;
+    }
+    width: 80%;
+    margin: 30px auto;
+  }
+  img {
+    max-width: 100%;
+  }
+  .bullets {
+    margin-top: 20px;
+    text-align: center;
+    li {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: $secondaryColor;
+      border: 2px solid $secondaryColor;
+      cursor: pointer;
+      transition: $transitionDuration_4ms;
+      &.active,
+      &:hover {
+        background-color: white;
+        border: 2px solid $mainColor;
+      }
+    }
+  }
+}
+/*END Slider*/
+
+/*Services*/
+.services-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .srv-box {
+    width: percentage(100/3);
+    &:not(:last-child) {
+      padding-right: 10px;
+    }
+    h2 {
+      i {
+        margin-right: 5px;
+        font-size: 25px;
+      }
+    }
+    p {
+      margin: 15px 0;
+      color: $secondaryColor;
+      line-height: 1.6;
+    }
+    a {
+      width: fit-content;
+      color: $mainColor;
+      font-size: 16px;
+      i {
+        transition: $transitionDuration_4ms;
+      }
+      &:hover {
+        i {
+          position: relative;
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+}
+/*END Services*/
+
+/*Players*/
+.players-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .player-box {
+    color: $secondaryColor;
+    &:not(:last-child) {
+      padding-right: 10px;
+    }
+    img {
+      max-width: 100%;
+      height: 200px;
+    }
+    h3 {
+      margin-top: 15px;
+      font-weight: normal;
+      span {
+        font-weight: bold;
+      }
+    }
+    p {
+      margin: 15px 0;
+      line-height: 1.6;
+    }
+    a {
+      width: fit-content;
+      color: $mainColor;
+      font-size: 16px;
+      i {
+        transition: $transitionDuration_4ms;
+      }
+      &:hover {
+        i {
+          position: relative;
+          transform: translateX(10px);
+        }
+      }
+    }
+  }
+}
+/*END Players*/
+
+/*LOREM IPSUM*/
+.lorem-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .lorem-box {
+    a {
+      img {
+        max-width: 100%;
+        height: 200px;
+      }
+    }
+  }
+}
+/*END LOREM IPSUM*/

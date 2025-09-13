@@ -1,0 +1,22 @@
+@mixin minMeduim {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// Overlay
+@mixin overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+// FadeInOut Animation
+@mixin keyFr($animation-name) {
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
