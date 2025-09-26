@@ -1,7 +1,23 @@
 .container {
-  width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
+  @media #{$minSmall} {
+    width: 750px;
+  }
+  @media #{$minMedium} {
+    width: 970px;
+  }
+  @media #{$minLarge} {
+    width: 1170px;
+  }
+}
+.text-center-mobile {
+  @media #{$maxSmall} {
+    text-align: center;
+    a {
+      margin: 0 auto;
+    }
+  }
 }

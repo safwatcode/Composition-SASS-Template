@@ -1,4 +1,10 @@
-@mixin minMeduim {
+@mixin maxMobile {
+  @media #{$maxMobile} {
+    @content;
+  }
+}
+
+@mixin minMedium {
   @media (min-width: 992px) {
     @content;
   }

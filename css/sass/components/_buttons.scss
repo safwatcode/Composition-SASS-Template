@@ -13,3 +13,27 @@
     background-color: $mainColor;
   }
 }
+
+.toggler {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  display: none;
+  @media #{$maxSmall} {
+    display: block;
+  }
+  span {
+    display: block;
+    background-color: $mainColor;
+    border-radius: 10px;
+    height: 3px;
+    width: 40px;
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
